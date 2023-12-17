@@ -40,7 +40,7 @@ public class AccountOpening {
 
 		aoAccountNameTf = new TextField();
 		aoAccountNameTf.setBounds(160, 100, 200, 25);
-		aoAccountNameTf.setFont(new Font("Arial", Font.PLAIN, 20));
+		aoAccountNameTf.setFont(new Font("Arial", Font.PLAIN, 13));
 
 		// nid
 		nidLbl = new Label();
@@ -50,7 +50,7 @@ public class AccountOpening {
 
 		aoNidTf = new TextField();
 		aoNidTf.setBounds(160, 150, 200, 25);
-		aoNidTf.setFont(new Font("Arial", Font.PLAIN, 20));
+		aoNidTf.setFont(new Font("Arial", Font.PLAIN, 13));
 
 		// address
 		addressLbl = new Label();
@@ -60,7 +60,7 @@ public class AccountOpening {
 
 		aoAddressTf = new TextField();
 		aoAddressTf.setBounds(160, 200, 200, 25);
-		aoAddressTf.setFont(new Font("Arial", Font.PLAIN, 20));
+		aoAddressTf.setFont(new Font("Arial", Font.PLAIN, 13));
 
 		// Deposit
 		initialDepositLbl = new Label();
@@ -70,7 +70,7 @@ public class AccountOpening {
 
 		aoDepositTf = new TextField();
 		aoDepositTf.setBounds(160, 250, 200, 25);
-		aoDepositTf.setFont(new Font("Arial", Font.PLAIN, 20));
+		aoDepositTf.setFont(new Font("Arial", Font.PLAIN, 13));
 
 		// Nominee Name
 		nomineeNameLbl = new Label();
@@ -80,7 +80,7 @@ public class AccountOpening {
 
 		aoNomineeNameTf = new TextField();
 		aoNomineeNameTf.setBounds(160, 300, 200, 25);
-		aoNomineeNameTf.setFont(new Font("Arial", Font.PLAIN, 20));
+		aoNomineeNameTf.setFont(new Font("Arial", Font.PLAIN, 13));
 
 		// account no
 		acNoLbl = new Label();
@@ -90,7 +90,7 @@ public class AccountOpening {
 
 		aoAccountNoTf = new TextField();
 		aoAccountNoTf.setBounds(520, 100, 200, 25);
-		aoAccountNoTf.setFont(new Font("Arial", Font.PLAIN, 20));
+		aoAccountNoTf.setFont(new Font("Arial", Font.PLAIN, 13));
 
 		// dob
 		dobLbl = new Label();
@@ -100,7 +100,7 @@ public class AccountOpening {
 
 		dateChooser = new JDateChooser();
 		dateChooser.setBounds(520, 150, 200, 25);
-		dateChooser.setFont(new Font("Arial", Font.PLAIN, 20));
+		dateChooser.setFont(new Font("Arial", Font.PLAIN, 13));
 		dateChooser.setBackground(new Color(136, 207, 157));
 
 		// account type
@@ -111,7 +111,7 @@ public class AccountOpening {
 
 		aoAcTypeTf = new TextField();
 		aoAcTypeTf.setBounds(520, 200, 200, 25);
-		aoAcTypeTf.setFont(new Font("Arial", Font.PLAIN, 20));
+		aoAcTypeTf.setFont(new Font("Arial", Font.PLAIN, 13));
 
 		// Maurity Date
 		maturityLbl = new Label();
@@ -121,7 +121,7 @@ public class AccountOpening {
 		
 		aoMaturityTf = new JDateChooser();
 		aoMaturityTf.setBounds(520, 250, 200, 25);
-		aoMaturityTf.setFont(new Font("Arial", Font.PLAIN, 20));
+		aoMaturityTf.setFont(new Font("Arial", Font.PLAIN, 13));
 		aoMaturityTf.setBackground(new Color(136, 207, 157));
 		
 
@@ -133,12 +133,12 @@ public class AccountOpening {
 
 		aoNomineeNidTf = new TextField();
 		aoNomineeNidTf.setBounds(520, 300, 200, 25);
-		aoNomineeNidTf.setFont(new Font("Arial", Font.PLAIN, 20));
+		aoNomineeNidTf.setFont(new Font("Arial", Font.PLAIN, 13));
 
 		saveAccountBtn = new Button("Save Account");
 		saveAccountBtn.addActionListener(o);
 		saveAccountBtn.setBounds(310, 360, 150, 40);
-		saveAccountBtn.setFont(new Font("Arial", Font.PLAIN, 20));
+		saveAccountBtn.setFont(new Font("Arial", Font.PLAIN, 13));
 		saveAccountBtn.setBackground(new Color(12, 107, 40));
 		saveAccountBtn.setForeground(Color.WHITE);
 		
