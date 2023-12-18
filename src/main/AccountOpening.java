@@ -6,7 +6,7 @@ import java.awt.Font;
 import java.awt.Label;
 import java.awt.TextField;
 
-import javax.swing.JFrame;
+import javax.swing.*;
 
 import com.toedter.calendar.JDateChooser;
 
@@ -21,7 +21,7 @@ public class AccountOpening {
 	JDateChooser dateChooser, aoMaturityTf;
 
 	AccountOpening(JFrame previousFrame) {
-		frame = new JFrame("Fin Flow");
+		frame = new JFrame("FinFlow Banking System");
 		int x = previousFrame.getLocation().x;
 		int y = previousFrame.getLocation().y;
 		frame.setLocation(x, y);
@@ -94,7 +94,7 @@ public class AccountOpening {
 
 		// dob
 		dobLbl = new Label();
-		dobLbl.setText("Account No:");
+		dobLbl.setText("Date of Birth");
 		dobLbl.setBounds(430, 150, 90, 25);
 		dobLbl.setBackground(new Color(136, 207, 157));
 
