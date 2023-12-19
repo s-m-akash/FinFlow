@@ -6,6 +6,8 @@ import java.awt.Font;
 import java.awt.Label;
 import java.awt.TextField;
 
+import javax.swing.JFrame;
+
 import javax.swing.*;
 
 import com.toedter.calendar.JDateChooser;
@@ -18,9 +20,10 @@ public class AccountOpening {
 			nomineeNameLbl, nomineeNidLbl;
 
 	Button saveAccountBtn, backBtn;
-	JDateChooser dateChooser, aoMaturityTf;
+	JDateChooser aoDob, aoMaturityTf;
 
 	AccountOpening(JFrame previousFrame) {
+		
 		frame = new JFrame("FinFlow Banking System");
 		int x = previousFrame.getLocation().x;
 		int y = previousFrame.getLocation().y;
@@ -94,14 +97,14 @@ public class AccountOpening {
 
 		// dob
 		dobLbl = new Label();
-		dobLbl.setText("Date of Birth");
+		dobLbl.setText("Date of Birth:");
 		dobLbl.setBounds(430, 150, 90, 25);
 		dobLbl.setBackground(new Color(136, 207, 157));
 
-		dateChooser = new JDateChooser();
-		dateChooser.setBounds(520, 150, 200, 25);
-		dateChooser.setFont(new Font("Arial", Font.PLAIN, 13));
-		dateChooser.setBackground(new Color(136, 207, 157));
+		aoDob = new JDateChooser();
+		aoDob.setBounds(520, 150, 200, 25);
+		aoDob.setFont(new Font("Arial", Font.PLAIN, 13));
+		aoDob.setBackground(new Color(136, 207, 157));
 
 		// account type
 		acTypeLbl = new Label();
@@ -169,7 +172,7 @@ public class AccountOpening {
 		frame.add(aoAccountNoTf);
 
 		frame.add(dobLbl);
-		frame.add(dateChooser);
+		frame.add(aoDob);
 
 		frame.add(acTypeLbl);
 		frame.add(aoAcTypeTf);
