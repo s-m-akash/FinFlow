@@ -14,7 +14,7 @@ public class Modules {
 			logoutMdlBtn;
 
 	Modules(JFrame previousFrame) {
-		frame = new JFrame("Fin Flow");
+		frame = new JFrame("FinFlow Banking System");
 		int x = previousFrame.getLocation().x;
 		int y = previousFrame.getLocation().y;
 		frame.setLocation(x, y);
@@ -22,14 +22,14 @@ public class Modules {
 		OuterListner o = new OuterListner(this);
 
 		moduleTitle = new Label();
-		moduleTitle.setText("Modules");
-		moduleTitle.setBounds(320, 35, 123, 30);
+		moduleTitle.setText("FinFlow Banking System");
+		moduleTitle.setBounds(220, 30, 400, 40);
 		moduleTitle.setFont(new Font("Arial", Font.PLAIN, 32));
 		moduleTitle.setBackground(new Color(136, 207, 157));
 
 		logoutMdlBtn = new Button("Logout");
 		logoutMdlBtn.addActionListener(o);
-		logoutMdlBtn.setBounds(675, 35, 70, 20);
+		logoutMdlBtn.setBounds(675, 35, 70, 25);
 		logoutMdlBtn.setFont(new Font("Arial", Font.PLAIN, 15));
 		logoutMdlBtn.setBackground(new Color(12, 107, 20));
 		logoutMdlBtn.setForeground(Color.WHITE);
