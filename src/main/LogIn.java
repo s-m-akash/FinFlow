@@ -6,12 +6,15 @@ import java.awt.Font;
 import java.awt.Label;
 import java.awt.TextField;
 
-import javax.swing.JFrame;
-import javax.swing.JPasswordField;
+import javax.swing.*;
 
 public class LogIn {
 	JFrame frame;
 	Label title, userIdLbl, passwordLbl, loginMsg;
+
+	ImageIcon logoIcon;
+
+	JLabel logoLabel;
 	TextField userIdTf;
 	JPasswordField password;
 	Button loginBtn;
@@ -24,7 +27,7 @@ public class LogIn {
 			y = frame.getLocation().y;
 		}
 
-		frame = new JFrame("Fin Flow");
+		frame = new JFrame("FinFlow Banking System");
 		frame.setLocation(x, y);
 		// Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 		// int centerX = (int) ((screenSize.getWidth() - frame.getWidth()) / 2);
@@ -33,10 +36,15 @@ public class LogIn {
 
 		OuterListner o = new OuterListner(this);
 
+		logoIcon = new ImageIcon("./resources/FinFlow.png");
+		logoLabel = new JLabel(logoIcon);
+		logoLabel.setBounds(250, 10, 300, 100);
+		frame.add(logoLabel);
+
 		title = new Label();
-		title.setText("Fin Flow");
-		title.setBounds(315, 130, 155, 30);
-		title.setFont(new Font("Arial", Font.PLAIN, 40));
+		title.setText("FinFlow Banking System");
+		title.setBounds(250, 130, 400, 40);
+		title.setFont(new Font("Arial", Font.PLAIN, 30));
 		title.setBackground(new Color(136, 207, 157));
 
 		userIdLbl = new Label();
@@ -59,7 +67,7 @@ public class LogIn {
 		password.setBounds(330, 250, 200, 30);
 		password.setFont(new Font("Arial", Font.PLAIN, 20));
 
-		loginBtn = new Button("LogIn");
+		loginBtn = new Button("Log in");
 		loginBtn.addActionListener(o);
 
 		loginBtn.setBounds(350, 300, 70, 40);

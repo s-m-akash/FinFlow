@@ -11,9 +11,9 @@ public class Main {
 	public static void main(String[] args) {
 		DBHelper dbHelper = new DBHelper();
 		Connection connection = dbHelper.getConnection();
-	//	new LogIn();
+//		new LogIn();
 		JFrame previoousFrame = new JFrame();
-		new AccountOpening(previoousFrame);
+		new Withdraw(previoousFrame);
 
 		try {
 			Statement statement = connection.createStatement();

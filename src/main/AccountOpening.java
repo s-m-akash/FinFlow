@@ -8,6 +8,8 @@ import java.awt.TextField;
 
 import javax.swing.JFrame;
 
+import javax.swing.*;
+
 import com.toedter.calendar.JDateChooser;
 
 public class AccountOpening {
@@ -21,7 +23,8 @@ public class AccountOpening {
 	JDateChooser aoDob, aoMaturityTf;
 
 	AccountOpening(JFrame previousFrame) {
-		frame = new JFrame("Fin Flow");
+		
+		frame = new JFrame("FinFlow Banking System");
 		int x = previousFrame.getLocation().x;
 		int y = previousFrame.getLocation().y;
 		frame.setLocation(x, y);
